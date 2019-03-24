@@ -1,0 +1,39 @@
+{
+  "name": "fb-wrapper",
+  "version": "0.1.0",
+  "description": "Facebook API client for Node.js",
+  "license": "MIT",
+  "repository": "mkosir/fb-wrapper",
+  "main": "lib/FacebookClient.js",
+  "types": "lib/FacebookClient.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "prettier-format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "keywords": [
+    "facebook",
+    "client",
+    "fb-wrapper"
+  ],
+  "bugs": {
+    "url": "https://github.com/mkosir/fb-wrapper/issues"
+  },
+  "homepage": "https://github.com/mkosir/fb-wrapper#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.5.0",
+    "prettier": "^1.16.4",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "fb": "^2.0.0"
+  }
+}
