@@ -14,3 +14,11 @@ It is implemented with facade pattern which translates facebook-node-sdk library
 ```shell
 npm i fb-wrapper
 ```
+
+## Usage:
+
+Only most commonly used function for interacting with Facebook API are implemented:
+
+- postOnWall(msg: string)
+- getInfo()
+- getFeed()

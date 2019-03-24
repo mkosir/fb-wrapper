@@ -1,6 +1,6 @@
 {
   "name": "fb-wrapper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Facebook API client for Node.js",
   "license": "MIT",
   "repository": "mkosir/fb-wrapper",
@@ -10,10 +10,12 @@
     "lib/**/*"
   ],
   "scripts": {
+    "clean": "rimraf lib",
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "prettier-format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "prepublish-clean": "npm run clean && npm run lint && npm run build"
   },
   "keywords": [
     "facebook",
@@ -28,6 +30,7 @@
     "@types/jest": "^24.0.11",
     "jest": "^24.5.0",
     "prettier": "^1.16.4",
+    "rimraf": "^2.6.3",
     "ts-jest": "^24.0.0",
     "tslint": "^5.14.0",
     "tslint-config-prettier": "^1.18.0",
