@@ -1,6 +1,6 @@
 import FB from 'fb';
 
-export default class FacebookClient {
+class FacebookClient {
   constructor(facebookToken: number, facebookAppID: string, facebookAppSecret: string) {
     FB.options({ version: 'v3.2' });
     FB.setAccessToken(facebookToken);
@@ -23,3 +23,5 @@ export default class FacebookClient {
     return res;
   }
 }
+
+module.exports = FacebookClient;
