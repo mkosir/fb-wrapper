@@ -20,5 +20,39 @@ npm i fb-wrapper
 Only most commonly used function for interacting with Facebook API are implemented:
 
 - postOnWall(msg: string)
-- getInfo()
 - getFeed()
+- getInfo(fields: string[] = ['id', 'name'])
+
+```js
+const FacebookClient = require('fb-wrapper');
+const facebookClient = new FacebookClient(
+  CONFIG.FACEBOOK_TOKEN,
+  CONFIG.FACEBOOK_APP_ID,
+  CONFIG.FACEBOOK_APP_SECRET,
+);
+
+// post on the wall
+try {
+  const msgToPost = 'Post a test message';
+  const postedMsg = await facebookClient.postOnWall(msgToPost);
+  console.log(postedMsg);
+} catch (e) {
+  console.error(e);
+}
+
+// get feed
+try {
+  const feed = await facebookClient.getFeed();
+  console.log(feed);
+} catch (e) {
+  console.error(e);
+}
+
+// get info
+try {
+  const requestedInfo = await facebookClient.getInfo(['id', 'name']);
+  console.log(requestedInfo);
+} catch (e) {
+  console.error(e);
+}
+```

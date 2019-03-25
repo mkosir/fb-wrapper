@@ -13,13 +13,13 @@ export default class FacebookClient {
     return res;
   }
 
-  public async getInfo() {
-    const res = await FB.api('me?fields=id,name');
+  public async getFeed() {
+    const res = await FB.api('me/feed');
     return res;
   }
 
-  public async getFeed() {
-    const res = await FB.api('me/feed');
+  public async getInfo(fields: string[] = ['id', 'name']) {
+    const res = await FB.api(`me?fields=${fields.join(',')}`);
     return res;
   }
 }
