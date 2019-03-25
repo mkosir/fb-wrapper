@@ -4,8 +4,7 @@
     "module": "commonjs",
     "declaration": true,
     "outDir": "./lib",
-    "strict": true,
-    "allowSyntheticDefaultImports": false
+    "strict": true
   },
   "include": ["src", "@types"],
   "exclude": ["node_modules", "**/__tests__/*"]

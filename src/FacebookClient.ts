@@ -8,9 +8,9 @@ class FacebookClient {
   }
 
   //// Methods
-  public async postOnWall(msg: string) {
-    const res = await FB.api('me/feed', 'post', { message: msg });
-    return res;
+  public async postOnWall(msg: string): Promise<string> {
+    const { id } = await FB.api('me/feed', 'post', { message: msg });
+    return id;
   }
 
   public async getFeed() {
