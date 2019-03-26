@@ -19,7 +19,7 @@ npm i fb-wrapper
 
 Only most commonly used function for interacting with Facebook API are implemented:
 
-- postOnWall(msg: string): Promise<string>
+- postOnWall(msg: string): Promise&lt;string&gt;
 - getFeed()
 - getInfo(fields: string[] = ['id', 'name'])
 
