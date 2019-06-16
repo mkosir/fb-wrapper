@@ -1,6 +1,6 @@
 {
   "name": "fb-wrapper",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Facebook API client for Node.js",
   "license": "MIT",
   "repository": "mkosir/fb-wrapper",
