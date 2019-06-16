@@ -28,6 +28,7 @@
   "homepage": "https://github.com/mkosir/fb-wrapper#readme",
   "devDependencies": {
     "@types/jest": "^24.0.15",
+    "@types/node": "^12.0.4",
     "jest": "^24.8.0",
     "prettier": "^1.18.2",
     "rimraf": "^2.6.3",
