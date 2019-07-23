@@ -2,7 +2,6 @@
 
 [![npm](https://img.shields.io/npm/v/fb-wrapper.svg)](https://www.npmjs.com/package/fb-wrapper)
 [![Travis (.org)](https://img.shields.io/travis/mkosir/fb-wrapper.svg)](https://travis-ci.org/mkosir/fb-wrapper)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/fb-wrapper.svg)](https://www.npmjs.com/package/fb-wrapper)
 
 ## Facebook API client for Node.js
 
